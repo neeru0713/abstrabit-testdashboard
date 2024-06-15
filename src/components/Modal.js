@@ -6,7 +6,7 @@ import logOut from "../assets/logOut.svg";
 const Modal = ({ showModal, setShowModal }) => {
   return (
     showModal && (
-      <div className="border absolute right-0 top-20 px-8 py-6 flex flex-col border rounded-lg gap-4 shadow shadow-lg">
+      <div className="border absolute right-0 top-20 px-8 py-6 flex flex-col border rounded-lg gap-4 shadow shadow-lg bg-white z-10">
         <div className="flex gap-3">
           <img src={userIcon} />
           <h1>My Profile</h1>
@@ -17,7 +17,7 @@ const Modal = ({ showModal, setShowModal }) => {
         </div>
         <div className="flex gap-3">
           <img src={Graph} />
-          <h1>My Transaction</h1>
+          <h1>My Transactions</h1>
         </div>
         <div className="flex gap-3">
           <img src={logOut} />
